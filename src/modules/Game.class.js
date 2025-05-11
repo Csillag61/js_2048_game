@@ -79,25 +79,6 @@ class Game {
     return arr;
   }
 
-  slideRow(row) {
-    let arr = row.filter((val) => val);
-
-    for (let i = 0; i < arr.length - 1; i++) {
-      if (arr[i] === arr[i + 1]) {
-        arr[i] *= 2;
-        this.score += arr[i];
-        arr[i + 1] = 0;
-      }
-    }
-    arr = arr.filter((val) => val);
-
-    while (arr.length < 4) {
-      arr.push(0);
-    }
-
-    return arr;
-  }
-
   postMoveActions() {
     this.addRandomTile();
     this.checkGameOver();
@@ -159,4 +140,4 @@ class Game {
   }
 }
 
-module.exports = Game;
+export default Game;

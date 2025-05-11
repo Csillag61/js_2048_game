@@ -1,9 +1,6 @@
 'use strict';
-// import Game from '../modules/Game.class.js';
-// const Game = require('../modules/Game.class');
-// const game = new Game();
+import Game from '../modules/Game.class.js';
 
-const Game = require('../modules/Game.class.js');
 const game = new Game();
 const startButton = document.querySelector('.start');
 const scoreElement = document.querySelector('.game-score');
